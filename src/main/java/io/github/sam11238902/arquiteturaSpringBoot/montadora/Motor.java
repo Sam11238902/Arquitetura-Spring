@@ -1,5 +1,6 @@
 package io.github.sam11238902.arquiteturaSpringBoot.montadora;
 
+
 public class Motor {
 	
 	private String Modelo;

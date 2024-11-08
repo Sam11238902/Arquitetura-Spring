@@ -2,11 +2,12 @@ package io.github.sam11238902.arquiteturaSpringBoot.montadora;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class MontadoraConfiguration {
 	
-	
+	@Primary // ESSA ANOTATION INFORMA QUE O BEAN É PRINCIPAL CASO ENCONTRE MAIS DE UM  E EU NAO ESPECIFIQUE . 
 	@Bean(name = "motorAspirado")
 	public Motor motor() {
 		var motor = new Motor();
@@ -21,6 +22,7 @@ public class MontadoraConfiguration {
 		
 	}
 	
+
 	@Bean(name = "motorEletrico")
 	public Motor motorEletrico() {
 		var motor = new Motor();
