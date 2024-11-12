@@ -22,7 +22,6 @@ public class MontadoraConfiguration {
 		
 	}
 	
-
 	@Bean(name = "motorEletrico")
 	public Motor motorEletrico() {
 		var motor = new Motor();

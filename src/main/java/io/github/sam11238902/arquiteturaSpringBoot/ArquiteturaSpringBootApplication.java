@@ -1,9 +1,6 @@
 package io.github.sam11238902.arquiteturaSpringBoot;
 
-import org.apache.catalina.core.ApplicationContext;
 import org.springframework.boot.Banner;
-import org.springframework.boot.Banner.Mode;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
