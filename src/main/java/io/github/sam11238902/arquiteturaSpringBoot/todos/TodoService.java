@@ -2,6 +2,7 @@ package io.github.sam11238902.arquiteturaSpringBoot.todos;
 
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
@@ -9,18 +10,33 @@ import org.springframework.stereotype.Service;
 @Service
 public class TodoService {
 	
+	
+	
+	@Autowired
 	private TodoRepository todoRepository;
 	
-	
+	@Autowired
 	private TodoValidator todoValidator;
 	
+	@Autowired
 	private MailSender mailSender;
+
+	
+	
+	
+	/*
 
 	public TodoService(TodoRepository todoRepository,TodoValidator todoValidator, MailSender mailSender) {
 		this.todoRepository = todoRepository;
 		this.todoValidator = todoValidator;
 		this.mailSender = mailSender;
 	}
+	*/
+	
+	
+	
+	
+	
 
 	public TodoEntity salvar(TodoEntity todoEntity) {
 

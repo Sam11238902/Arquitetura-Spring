@@ -1,9 +1,12 @@
 package io.github.sam11238902.arquiteturaSpringBoot.todos;
 
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 // CLASSE PARA VALIDAR O TODO .
 //TORNA A CLASSE UM BEAN , DO SPRING . VIRA UM COMPONENTE DENTRO DO CONTAINER DO SPRING.
+
+@Lazy
 @Component
 public class TodoValidator {
 	
