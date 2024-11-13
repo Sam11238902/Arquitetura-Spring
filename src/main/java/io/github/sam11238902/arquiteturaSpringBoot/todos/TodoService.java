@@ -33,7 +33,6 @@ public class TodoService {
 		todoRepository.save(todo);
 		
 		String status = todo.getConcluido() == Boolean.TRUE ? "concluido" : "Nao concluido";
-		
 		mailSender.sendEmail("Todo" + todo.getDescription() + "foi atualizado para " + status);
 	
 	

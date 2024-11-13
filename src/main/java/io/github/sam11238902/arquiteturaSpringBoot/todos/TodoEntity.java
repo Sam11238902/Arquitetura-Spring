@@ -1,5 +1,7 @@
 package io.github.sam11238902.arquiteturaSpringBoot.todos;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,7 +25,7 @@ public class TodoEntity {
 	@Column(name = "description")
 	private String description;
 	
-
+	@JsonProperty("concluido")
 	@Column(name = "fl_concluido")
 	private Boolean concluido;
 
