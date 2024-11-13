@@ -30,9 +30,7 @@ public class TelevisionController {
 	
 	@PostMapping("/turnTv")
 	public String turnTv(@RequestBody TelevisionControl televisionControll) {
-		
 		Television t1 = new Television("Tv Sensacional", Brand.LG, typeLed);
-		
 		return t1.turnOnTV(televisionControll);
 	
 	
